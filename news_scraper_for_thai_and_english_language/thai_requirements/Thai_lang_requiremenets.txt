@@ -1,0 +1,9 @@
+1) firstly import pythoninlp because it's search engine library for thai langauge
+
+pip install pythoninlp
+
+2) replace the file's code which is stored in site-package/newpaper folder(Update library for newspaper) with configuration.py, text.py, utils.py, extractors.py 
+
+3) Copy and store the stopwords-th.txt file in this location which is below the text to scrap thai language using tokenize the words of thai language
+
+Location_Path: C:\Users\<Computer Name>\anaconda3\Lib\site-packages\newspaper\resources\text\stopwords-th.txt 

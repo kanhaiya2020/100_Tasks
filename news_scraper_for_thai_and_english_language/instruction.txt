@@ -1,0 +1,1 @@
+If you want to scrap the news for thailand and india through news_scraper script of hourly_download then you should follow the instruction which is given in thai_requirements folder after that you will able to scrap the data for thailand and india at the hourly basis using crontab
