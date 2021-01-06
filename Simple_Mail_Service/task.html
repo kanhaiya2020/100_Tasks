@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+        .missing-sign {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+            background-color: skyblue;
+        }
+        .urgent {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+            background-color: green;
+        }
+       .others {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+            background-color: orange;
+       }
+  </style>
+  </head>
+<body>
+<!--<nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav d-flex">
+    <li class="nav-item mr-auto p-2">
+      <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success mr-sm-4" type="submit">Search</button>
+      </form>
+    </li>
+    <li class="nav-item p-2">
+      <button type="button" class="btn btn-success mr-sm-4">Add New Admission</button>
+    </li>
+    <li class="nav-item p-2">
+      <button type="button" class="btn btn-success mr-sm-4">Unit</button>
+    </li>
+  </ul>
+</nav>--->
+<div class="container-fluid mt-3">
+    <div class="d-flex bg-light" style="background-color:light;">
+        <div class="p-2 bg-red mr-auto">
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success mr-sm-1" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="p-2 bg-red"><button type="button" class="btn btn-success mr-sm-1">Add New Admission</button></div>
+        <div class="p-2 bg-red"><button type="button" class="btn btn-success mr-sm-1">Unit</button></div>
+  </div>
+</div>
+
+<br>
+<!---<div class="container">
+<nav class="navbar navbar-expand-sm bg-light" style="height:28px">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <p class="text-center mr-sm-2" style="margin-top: 21px;"><b>Hotlist</b></p>
+    </li>
+    <li class="nav-item">
+        <p class="text-center mr-sm-2" style="margin-top: 21px;">(16)</p>
+    </li>
+    <li class="nav-item" style="float:right;">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" style="margin-top: 19px;height:26px;" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+
+    </li>
+
+  </ul>
+</nav>--->
+<div class="container mt-3">
+  <div class="d-flex bg-light" style="height:30px">
+    <div class="p-1 bg-red"><p class="text-center mr-sm-2"><b>Hotlist</b></p></div>
+    <div class="p-1 bg-red"><p class="text-center mr-sm-2">(16)</p></div>
+    <div class="p-1 bg-red"><span class="rounded-circle missing-sign"></span></div>
+    <div class="p-1 bg-red"><p class="text-center mr-sm-2">Missing Sign</p></div>
+    <div class="p-1 bg-red"><span class="rounded-circle urgent"></span></div>
+    <div class="p-1 bg-red"><p class="text-center mr-sm-2">Urgent</p></div>
+    <div class="p-1 bg-red"><span class="rounded-circle others"></span></div>
+    <div class="p-1 mr-auto bg-red"><p class="text-center mr-sm-2">Others</p></div>
+    <div class="p-1 bg-red">
+    	<div class="dropdown">
+            <button type="button" class="btn btn-primary btn-sm dropdown-toggle justify-content-left" data-toggle="dropdown">
+                Filter by Group
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+  </div>
+<br>
+    <div class="row">
+     <div class="col">
+      	<div class="card" style="width:150px;">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+               <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+  </div>
+
+</div>
+
+<br>
+<!---<div class="container">
+<nav class="navbar navbar-expand-sm bg-light" style="height:28px">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <p class="text-center mr-sm-2" style="margin-top: 21px;"><b>Resident</b></p>
+    </li>
+    <li class="nav-item">
+        <p class="text-center mr-sm-2" style="margin-top: 21px;">(16)</p>
+    </li>
+    <li class="nav-item">
+        <div class="dropdown" >
+            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" style="margin-top: 19px;height:26px;" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu mr-auto">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+
+    </li>
+
+  </ul>
+</nav>--->
+
+<div class="container mt-3">
+  <div class="d-flex bg-light" style="height:30px">
+    <div class="p-1 bg-red"><p class="text-center mr-sm-2"><b>Resident</b></p></div>
+    <div class="p-1 mr-auto bg-red"><p class="text-center mr-sm-2">(105)</p></div>
+    <div class="p-1 bg-red">
+    	<div class="dropdown">
+            <button type="button" class="btn btn-primary btn-sm dropdown-toggle justify-content-left" data-toggle="dropdown">
+                Sort by
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+  </div>
+<br>
+     <div class="row">
+      <div class="col">
+      	<div class="card" style="width:150px;">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	  </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+               <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+  </div>
+   <br>
+     <div class="row">
+      <div class="col">
+      	<div class="card" style="width:150px ; height:100%">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	  </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+               <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+     <div class="col">
+      	<div class="card" style="width:150px">
+    		<img src="hy.jpg" class="rounded-circle" alt="Cinque Terre" width="70" height="70" style="margin-top:20px;margin-left:20px;">
+    		<div class="card-body">
+              <h6 class="card-text">Health</h6>
+              <h6 class="card-text">Health1</h6>
+              <h6 class="card-text">Health3</h6>
+              <h6 class="card-text">Health5</h6>
+    		</div>
+  		</div>
+  	 </div>
+  </div>
+
+</div>
+</body>
+</html>

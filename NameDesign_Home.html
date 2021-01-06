@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NameDesigns.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Design of {{name}}</h1>
+<div class="container">
+  {% for var in range(0,Number_of_Designs,4) %}
+  <div class="row">
+  {% for var1 in range(var,var+4) %}
+	{% if(var1<Number_of_Designs) %}
+  	<div class="col-3">
+      <div class="card bg-white" style="width:300px;height:200px">
+      	<div class="card-body text-center">
+        	<p class="card-text" style="margin:18%;font-family:'{{font_family}}';font-size:'{{font_size}}'px;font-style:'{{font_style}}';color:'{{text-color}}';weight:'{{weight}}';" >{{name_type}}</p>
+        </div>
+      </div>
+  	</div>
+	{% endif %}
+  {% endfor %}
+  </div>
+ {% endfor %}
+</div>
+</body>
+</html>
